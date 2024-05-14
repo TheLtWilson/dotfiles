@@ -1,0 +1,81 @@
+{
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+		"hyprland/workspaces",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"pulseaudio",
+		"backlight",
+		"battery",
+		"tray"
+	],
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+
+	"clock": {
+		"format": "{:%I:%M %p • %m-%d-%Y}",
+		"tooltip": false
+	},
+
+	"pulseaudio": {
+		"format": "{icon}  {volume:2}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "MUTE",
+		"format-icons": {
+			"headphones": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+		"on-click-right": "pavucontrol"
+	},
+	"memory": {
+		"interval": 5,
+		"format": "Mem {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "CPU {usage:2}%"
+	},
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon}  {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"disk": {
+		"interval": 5,
+		"format": "Disk {percentage_used:2}%",
+		"path": "/"
+	},
+	"backlight": {
+		"interval": 5,
+		"format": "{icon}  {percent}%",
+		"format-icons": ["",""]
+	},
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	}
+}
