@@ -44,28 +44,11 @@ window#waybar {
 	border: solid 2px #d085ff;
 }
 
-/* 
-
-#pulseaudio {
-	color: #268bd2;
+#pulseaudio.muted,
+#battery.critical {
+	background: #561c1c;
+	color: #ebd8d8;
 }
-#backlight {
-	color: #35abbb
-}
-#memory {
-	color: #2aa198;
-}
-#cpu {
-	color: #6c71c4;
-}
-#battery {
-	color: #859900;
-}
-#disk {
-	color: #b58900;
-}
-
-*/
 
 #clock,
 #pulseaudio,
