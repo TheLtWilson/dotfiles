@@ -4,13 +4,37 @@
      "type": "small"
   },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "kernel",
-    "uptime",
-    "cpu",
-    "gpu",
-    "memory"
+    {
+      "type": "custom",
+      "format": "┌─────────── Lt. Linux ──────────┐"
+    },
+    {
+      "type": "os",
+      "key": "󰌽 "
+    },
+    {
+      "type": "kernel",
+      "key": " "
+    },
+    {
+      "type": "uptime",
+      "key": "󰥔 "
+    },
+    {
+      "type": "cpu",
+      "key": " "
+    },
+    {
+      "type": "gpu",
+      "key": " "
+    },
+    {
+      "type": "memory",
+      "key": " "
+    },
+    {
+      "type": "custom",
+      "format": "└────────────────────────────────┘"
+    }
   ]
 }
